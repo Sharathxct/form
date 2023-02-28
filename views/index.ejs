@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form  </title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="/submit" method="post" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" name="studentName"  placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">College Name</span>
+            <input type="text" name="collegeName" placeholder="Enter your College name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Roll Number</span>
+            <input type="text" name="rollNumber" placeholder="Enter your roll number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text"name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phoneNumber" placeholder="Enter your number(whatsapp)" required>
+          </div>
+          
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="year" value="1" id="dot-1">
+          <input type="radio" name="year" value="2" id="dot-2">
+          <input type="radio" name="year" value="3" id="dot-3">
+          <input type="radio" name="year" value="4" id="dot-4">
+
+          <span class="gender-title">Year</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">1</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">2</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">3</span>
+            </label>
+            <label for="dot-4">
+              <span class="dot four"></span>
+              <span class="gender">4</span>
+            </label>
+          </div>
+        </div>
+
+      
+
+        
+
+
+
+
+
+      <div class="gender-details">
+        <input type="radio" name="section" value="A" id="dot-a">
+        <input type="radio" name="section" value="B" id="dot-b">
+        <input type="radio" name="section" value="C" id="dot-c">
+        
+
+        <span class="gender-title">Section</span>
+        <div class="category">
+          <label for="dot-a">
+          <span class="dot a"></span>
+          <span class="gender">A</span>
+        </label>
+        <label for="dot-b">
+          <span class="dot b"></span>
+          <span class="gender">B</span>
+        </label>
+        <label for="dot-c">
+          <span class="dot c"></span>
+          <span class="gender">C</span>
+          </label>
+        </div>
+      </div>
+<br>
+
+
+      <div class="tt-select gender-details" >
+        <span class="dept-title">Department</span>
+
+        <select id = "dept" name="department">
+            <option value="0">Options</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="CSIT">CSIT</option>
+            <option value="CSD">CSD</option>
+            <option value="CSC">CSC</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="MECH">MECH</option>
+            <option value="MBA">MBA</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+<br>
+
+
+
+
+    <div class="new">
+      <span class="dept-title" name="events" >Event List</span>
+      <br><br>
+        <div class="form-group">
+          <input type="checkbox" id="pp"   name="events" value="Paper Presentation" onchange="qor(this,100)">
+          <label for="pp">Paper Presentation (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox"  name="events" value="Brain Wave Bonanza" id="bwb" onchange="qor(this,200)">
+          <label for="bwb">Brain Wave Bonanza (200/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox"  name="events" value="Data Analysis"    id="da" onchange="qor(this,100)">
+          <label for="da">Data Analysis (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox"  name="events" value="Cross Words"  id="cw" onchange="qor(this,100)">
+          <label for="cw">Cross Words (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox"  name="events" value="Technical Quiz" id="tq" onchange="qor(this,100)">
+          <label for="tq">Technical Quiz (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Speed Test"    id="st" onchange="qor(this,100)">
+          <label for="st">Speed Test (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Bug Bounty"   id="bb" onchange="qor(this,100)">
+          <label for="bb">Bug Bounty (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox"  name="events" value="Video Tape"  id="vt" onchange="qor(this,150)">
+          <label for="vt">Video Tape (150/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Technical Debate" id="td" onchange="qor(this,100)">
+          <label for="td">Technical Debate (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Slow Bike Race" id="sbr" onchange="qor(this,100)">
+          <label for="sbr">Slow Bike Race (100/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Blind Shot" id="bs" onchange="qor(this,60)">
+          <label for="bs">Blind Shot (60/-)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Wicket Hitting" id="wh" onchange="qor(this,200)">
+          <label for="wh">Wicket Hitting (200/- per team)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="events" value="Scary Hunt" id="sh" onchange="qor(this,100)">
+          <label for="sh">Scary Hunt (100/-)</label>
+        </div>      
+    </div>
+
+<br>
+    <div class="payment"> 
+    <!-- <a  href="">
+      <img class="dyno" src="" alt="">
+    </a> -->
+    <div class="button">
+      <a class="dino" >Select any event first</a>
+    </div>
+  </div>
+
+<div class="user-details">
+  <div class="input-box">
+    <span class="details">Transaction ID</span>
+    <input type="text" name="Transactionid" placeholder="Enter Transaction ID" required>
+  </div>
+
+
+<div class="form-group">
+  <label for="image">Screenshot of Payment:</label>
+  <input type="file" id="image" name="paymentScreenshot" accept="image/*" required>
+</div>
+</div>
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script>
+  let sum = 0;
+  const imj = document.querySelector(".dyno");
+  const anc = document.querySelector(".dino");
+  let stri = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=9398303531@paytm&pn=MarriLaxman&cu=INR&am="
+  let strp = "upi://pay?pa=9398303531@paytm&pn=MarriLaxman&cu=INR&am="
+  function qor(obj,ad){
+    if(obj.checked){
+      sum += ad;
+    }
+    else{
+      sum -= ad;
+    }
+    if(sum > 1){
+      console.log(sum,stri+sum);
+      // imj.src = stri+sum;
+      anc.href = strp+sum;
+      anc.textContent = "Pay";
+      
+    }
+    else{
+      anc.textContent = "Select an event first";
+      anc.href = "";
+      sum = 0;
+    }
+  }
+</script>
+
+</body>
+</html>
